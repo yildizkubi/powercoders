@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Kubilay Yildiz</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Font Awesome kit linkini buraya ekleyebilirsiniz -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Kubilay Yildiz</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="projects">
+      <div class="container">
+        <h2 class="projects-header">My Projects</h2>
+
+        <div class="project">
+          <h3 style="color: red">
+            Petclinic Microservices CI/CD Pipeline with DB
+          </h3>
+          <img src="images/project-plan.png" alt="Project Plan Image" />
+          <p>
+            <b>Description :</b>
+            This project aims to create full CI/CD Pipeline for microservice
+            based applications using [Spring Petclinic Microservices
+            Application](https://github.com/spring-petclinic/spring-petclinic-microservices).
+            Jenkins Server deployed on Elastic Compute Cloud (EC2) Instance is
+            used as CI/CD Server to build pipelines.
+          </p>
+          <a
+            href="https://github.com/yildizkubi/petclinic-microservices-with-db"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project">
+          <h3 style="color: red">AWS Capstone Project</h3>
+          <img src="images/capstone.jpg" alt="Project Plan Image" />
+          <p>
+            <b>Description :</b>
+            The Clarusway Blog Page Application aims to deploy blog application
+            as a web application written Django Framework on AWS Cloud
+            Infrastructure. This infrastructure has Application Load Balancer
+            with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and
+            Relational Database Service (RDS) on defined VPC. Also, The
+            Cloudfront and Route 53 services are located in front of the
+            architecture and manage the traffic in secure. User is able to
+            upload pictures and videos on own blog page and these are kept on S3
+            Bucket. This architecture will be created by Firms DevOps Guy.
+          </p>
+          <a
+            href="https://github.com/yildizkubi/awscapstoneproject"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project">
+          <h3 style="color: red">
+            Terraform-Phonebook-Application-deployed-on-AWS
+          </h3>
+          <img src="images/tf-phonebook.png" alt="Project Plan Image" />
+          <p>
+            <b>Description :</b>
+            The Phonebook Application aims to create a phonebook application in
+            Python and deployed as a web application with Flask on AWS
+            Application Load Balancer with Auto Scaling Group of Elastic Compute
+            Cloud (EC2) Instances and Relational Database Service (RDS) using
+            Terraform.
+          </p>
+          <a href="https://github.com/yildizkubi/phonebook" target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <!-- Diğer projeleri aynı formatta ekleyebilirsiniz -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Kubilay Yildiz</p>
+      </div>
+    </footer>
+
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </body>
+</html>
