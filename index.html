@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Kubilay Yıldız</title>
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
   </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <h1>Kubilay Yıldız</h1>
+  <body class="homepage">
+    <header>
+      <div class="container">
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,33 +24,64 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <section class="hero">
-        <div class="hero-content">
-          <h2>Welcome to My Portfolio</h2>
-          <p>
-            I am a DevOps Engineer passionate about cloud technologies and
-            automation.
-          </p>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my work and get to know me better.</p>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section class="main-content">
+      <div class="container">
+        <!-- <h2>What is DevOps?</h2> -->
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/kBV8gPVZNEE?si=rimJfRlpSFhqrc02"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section>
+        <div class="social-buttons">
+          <a
+            href="https://www.github.com/yildizkubi"
+            target="_blank"
+            class="social-button"
+          >
+            <img src="/images/github.png" alt="Github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yildizkubi"
+            target="_blank"
+            class="social-button"
+          >
+            <img src="images/linkedin.png" alt="Linkedin" />
+          </a>
         </div>
       </section>
-
-      <section class="main-content">
-        <h2>Featured Project</h2>
-        <div class="project">
-          <h3>Petclinic Microservices CI/CD Pipeline with DB</h3>
-          <p>
-            A detailed project demonstrating continuous integration and
-            deployment with microservices architecture.
-          </p>
-          <a href="#">View Project</a>
-        </div>
-      </section>
-
-      <footer>
-        <p>&copy; 2024 Kubilay Yıldız. All rights reserved.</p>
-      </footer>
-    </div>
+      <p>&copy; 2024 Kubilay Yildiz - All rights reserved</p>
+    </footer>
   </body>
 </html>

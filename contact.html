@@ -2,15 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me - Kubilay Yildiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
-  </head>
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1>Kubilay Yildiz</h1>
+    <header>
+      <div class="container">
+        <!-- <h1>Kubilay Yildiz</h1> -->
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,10 +25,12 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      </header>
-
+      </div>
+    </header>
+    <br>
       <section class="main-content">
         <h2>Contact Me</h2>
+        <br>
         <!-- Google Form embedded -->
         <div class="google-form">
           <iframe
@@ -35,10 +43,29 @@
             >Yükleniyor…</iframe
           >
         </div>
-      </section>
 
+        <!-- Sosyal medya profilleri -->
+    
       <footer>
-        <p>&copy; 2024 Kubilay Yildiz. All rights reserved.</p>
+        <section>
+          <div class="social-buttons">
+            <a
+              href="https://www.github.com/yildizkubi"
+              target="_blank"
+              class="social-button"
+            >
+              <img src="/images/github.png" alt="Github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yildizkubi"
+              target="_blank"
+              class="social-button"
+            >
+              <img src="images/linkedin.png" alt="Linkedin" />
+            </a>
+          </div>
+        </section>
+        <p>&copy; 2024 Kubilay Yildiz - All rights reserved</p>
       </footer>
     </div>
   </body>

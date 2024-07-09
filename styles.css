@@ -3,25 +3,26 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Beyaz arka plan rengi */
-  color: #333; /* Metin rengi */
+  background-color: #c8dcdb; /* Mavi arka plan rengi */
+  color: #000000; /* Metin rengi */
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
 header {
-  background: #333;
+  background: #2766a4; /* Koyu mavi arka plan rengi */
   color: #fff;
   padding: 20px 0;
+  width: 100%; /* Sayfanın tamamını kaplaması için genişlik ayarı */
 }
 
 header h1 {
+  margin: 0;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 header nav {
@@ -31,48 +32,55 @@ header nav {
 header nav ul {
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul li {
-  display: inline;
-  padding: 0 20px;
+  margin: 0 10px;
 }
 
-header a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-header a:hover {
+header nav ul li a:hover {
   color: #ddd;
 }
 
-.hero {
-  background: url("https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2021/07/13429_ILL_DevOpsLoop.png")
+/* .hero {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Devops-toolchain.svg/2560px-Devops-toolchain.svg.png")
     no-repeat center center/cover;
-  height: 450px; /* Set height of hero section */
+  height: 190px; /* Set height of hero section
   position: relative;
-}
+} */
 
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  background-color: #c8dcdb;
+  color: #2766a4;
+  padding: 10px;
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
   position: absolute;
-  bottom: 20px; /* Yerleşimini istediğiniz yere göre ayarlayabilirsiniz */
+  top: 12%; /* Yerleşimini istediğiniz yere göre ayarlayabilirsiniz */
   left: 50%;
   transform: translateX(-50%);
 }
 
 .hero h2 {
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .hero p {
-  font-size: 1.2em;
+  font-size: 1em;
+  text-align: center;
+  color: #000000;
 }
 
 .main-content {
@@ -81,22 +89,236 @@ header a:hover {
 }
 
 .project {
-  border: 1px solid #ddd;
+  border: 2px solid #000000;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
+  max-width: 1300px;
   border-radius: 8px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
 }
 
 footer {
-  background: #333;
+  background: #2766a4;
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  margin: 0;
+  position: relative; /* Mutlak pozisyonlandırma */
+  bottom: 0; /* Sayfanın en altına yapıştır */
+  left: 0;
+  width: 100%;
 }
 
 .projects-header {
   text-align: center;
-  color: #007bff;
-  font-size: 2.5em; /* Örneğin 2.5em büyüklüğünde */
+  color: #2766a4;
+  font-size: 1.5em; /* Örneğin 2.5em büyüklüğünde */
   margin-bottom: 20px;
+}
+
+/* About bölümü özelleştirmeleri */
+
+.about {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about .container {
+  text-align: justify; /* İçeriği sola yasla */
+  font-size: large;
+  max-width: 100%; /* Maksimum genişlik belirleyerek metni sınırla */
+  margin: 0 auto; /* Ortala */
+  /* padding: 0 20px; Sağdan ve soldan 20px boşluk ekle */
+  background-color: #c8dcdb;
+}
+
+.about .bio {
+  line-height: 1.6; /* Satır aralığını artırarak okunabilirliği artır */
+}
+
+.about img.centered-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* Fotoğrafı yuvarlak yapmak için */
+  width: 200px; /* İstediğiniz genişlik */
+  height: 200px; /* İstediğiniz yükseklik */
+  object-fit: cover;
+}
+
+.about h2 {
+  text-align: center; /* Başlığı ortala */
+  color: #2766a4;
+}
+
+.bio,
+.skills {
+  background-color: white; /* Beyaz arka plan rengi */
+  /* border: 2px solid #c8dcdb; */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #000000;
+  /* border-width: 20px; */
+}
+
+.skills h3 {
+  margin-top: 20px; /* Başlıklar arasında boşluk bırakmak için margin-top kullanabilirsiniz */
+}
+
+.skills ul {
+  padding-left: 20px; /* Liste içindeki özgün sıralama işaretlerinin soldan boşluk bırakmasını sağlar */
+  padding-right: 20px;
+}
+
+.skills ul li {
+  margin-bottom: 8px; /* Liste öğeleri arasında boşluk bırakmak için */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  background-color: #c8dcdb;
+}
+
+.technical-skills,
+.soft-skills {
+  flex: 1;
+  min-width: 300px; /* Daha küçük ekranlarda düzgün görünmesi için minimum genişlik ayarlaması */
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.technical-skills h3,
+.soft-skills h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.technical-skills ul,
+.soft-skills ul {
+  /* list-style-type: none; */
+  padding: 0;
+}
+
+.technical-skills li,
+.soft-skills li {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Contact bölümü özelleştirmeleri */
+
+.main-content {
+  padding: 40px 0;
+  text-align: center;
+  color: #2766a4;
+}
+
+.google-form {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.center {
+  text-align: center;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-button {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-button img {
+  width: 32px;
+  height: 32px;
+}
+
+body.homepage {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c8dcdb; /* Varsayılan arka plan rengi */
+  color: #000000; /* Metin rengi */
+  background-image: url("https://logos-world.net/wp-content/uploads/2021/02/Docker-Logo.png"),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/2560px-Terraform_Logo.svg.png"),
+    url("https://1000logos.net/wp-content/uploads/2022/07/Kubernetes-Logo.png"),
+    url("https://cdn.freelogovectors.net/wp-content/uploads/2018/07/grafana-logo.png"),
+    url("https://miro.medium.com/v2/resize:fit:800/0*1VVUuI6RfhJjiWC3.png"),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ansible_logo.svg/1664px-Ansible_logo.svg.png"),
+    url("https://ekiip.com/wp-content/uploads/2020/01/cropped-devops.png");
+  /* background-position: 10px 140px, 2000px 250px, 10px 830px, 10px 550px,
+    2000px 550px, 2150px 800px, 950px 250px; */
+  background-position: left 5% top 20%, right 5% top 25%, left 5% top 80%,
+    left 5% top 50%, right 5% top 50%, right 10% top 80%, left 50% top 37.5%;
+  background-size: 20%, 20%, 20%, 20%, 20%, 8%, 30%; /* Fotoğrafların boyutları ve kaplama şekli */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
+}
+
+.video-container {
+  position: relative;
+  width: 100%; /* Container'ın genişliğini tam sayfa genişliğinde yapar */
+  padding-top: 56.25%; /* Video oranına (9:16 oranı için 16/9 = 56.25%) göre yükseklik ayarı yapar */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technical-skills,
+  .soft-skills {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .about .container {
+    text-align: justify;
+    padding: 0 10px; /* Mobil cihazlarda daraltılmış padding */
+  }
+
+  .hero-content {
+    top: 8%; /* Mobil cihazlarda daha üst konumlandırma */
+  }
 }
